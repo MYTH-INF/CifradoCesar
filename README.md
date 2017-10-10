@@ -1,22 +1,29 @@
 # CIFRADO CÉSAR
-El Cifrado César permite al usuario permite al usuario ingresar una palabra y a trevés de un aler se te devolverá un string según la formula del cifrado
+El Cifrado César permite al usuario permite al usuario ingresar una palabra y a trevés de un alert se te devolverá un string según la formula del cifrado
 
 ### Variables utilizadas
 -Funcion cipher
 1. var string
-2. var numCesar
-3. var letterCesar
-4. var index
+2. var indexCesar
+3. var numCesar1
+4. var letterCesar1
+5. var arr
 
 -Funcion decipher
 1. var string
-2. var posic
-3. var num
-4. var letter
+2. var indexCesar
+3. var numCesar2
+4. var letterCesar2
+5. var arr
 
 ### PSEUDOCÓDIGO
 1. Se le pide una letra al usuario por medio de un Prompt().
-2. se calcula las posiciones de cada letra del string con un "For" y charAt().
-3. se crea la variable stringC para para calcular la posición de cada letra según el cifrado César con charCodeAt y la fómula del cifrado.
-4. se crea la variable letterCesar para reemplazar el número de la posición Cesar con la letrá del cifrado mediante un fromCharCode.
+2. Se crea un array vacio que almacenará todas las letras de la palabra
+3. Se crean variable indexCesar para encontrar la posición de cada letra según cifrado Cesar
+4. Se verifica si la palabra ingresada esta en mayúscula, minúscula o es un número
+5. Se crea la variable numCesar para avanzar 33 posiciones
+6. Se crea letterCesar para conocer la nueva letra de cada palabra segun Cifrado Cesar
+7. Se unen todas las letras el array
+8. Se devuelve la palabra cifrada por medio de un alert
+
 
